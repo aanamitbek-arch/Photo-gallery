@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="kk">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Суретті оңтайландыру</title>
+	</head>
+	<body>
+		<h2>WebP форматқа айналдыру</h2>
+
+		<form method="POST" enctype="multipart/form-data">
+			<input type="file" name="image" required />
+			<button type="submit">Жүктеу</button>
+		</form>
+
+		{% if original_size %}
+		<p>Түпнұсқа өлшемі: {{ original_size|round(2) }} KB</p>
+		<p>Оңтайландырылған өлшем: {{ optimized_size|round(2) }} KB</p>
+		<p>Жылдамдық артты: {{ percent|round(2) }} %</p>
+		{% endif %}
+	</body>
+</html>

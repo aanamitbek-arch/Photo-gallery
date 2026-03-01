@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фото-галерея</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; 
+            gap: 15px; 
+        }
+
+        .block {
+            width: 100%;
+            padding-top: 100%; 
+            background-size: cover; 
+            background-position: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Фото-галерея</h1>
+    <div class="gallery">
+        <div class="block" style="background-image: url('https://picsum.photos/id/1015/300/300');"></div>
+        <div class="block" style="background-image: url('https://picsum.photos/id/1016/300/300');"></div>
+        <div class="block" style="background-image: url('https://picsum.photos/id/1025/300/300');"></div>
+        <div class="block" style="background-image: url('https://picsum.photos/id/1035/300/300');"></div>
+        <div class="block" style="background-image: url('https://picsum.photos/id/1045/300/300');"></div>
+        <div class="block" style="background-image: url('https://picsum.photos/id/1055/300/300');"></div>
+        <div class="block" style="background-image: url('https://picsum.photos/id/1065/300/300');"></div>
+        <div class="block" style="background-image: url('https://picsum.photos/id/1075/300/300');"></div>
+    </div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт құрылымы</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+      
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+            grid-template-columns: 1fr 3fr; 
+            grid-template-rows: auto 1fr auto;
+            gap: 15px;
+            min-height: 100vh;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #234624;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        aside {
+            grid-area: sidebar;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        main {
+            grid-area: main;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+    
+        @media (max-width: 768px) {
+            .container {
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "main"
+                    "footer";
+                grid-template-columns: 1fr; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>Header</header>
+        <aside>Sidebar</aside>
+        <main>
+            <h2>Main Content</h2>
+            <p>Негізгі мазмұн . Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod.</p>
+        </main>
+        <footer>Footer</footer>
+    </div>
+
+</body>
+</html>
