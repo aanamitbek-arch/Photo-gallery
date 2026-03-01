@@ -20,19 +20,6 @@ It’s created with Python for the backend logic and HTML/CSS for the frontend s
 - Easy to browse interface  
 - Clean frontend and simple backend  
 
-## 📁 Project Structure
-
-
-Photo-gallery/
-│── static/
-│   ├── images/
-│   └── style.css
-│── templates/
-│   └── index.html
-│── app.py
-│── README.md
-
-
 ## 🧠 How to Run Locally
 
 1. Make sure you have Python installed  
@@ -42,14 +29,5 @@ Photo-gallery/
 
 bash
 python app.py
-
-
-5. Open in browser:
-
-
-http://127.0.0.1:5000
-
-
----
 
 💡 This project was created as part of my web development learning journey — improving my Python and frontend skills.
